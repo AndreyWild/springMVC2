@@ -1,9 +1,11 @@
 package com.wild.spring.mvc;
 
+import javax.validation.constraints.Size;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Employee {
+    @Size(min = 2, message = "name must be minimum 2 symbols") // имя не менее 2 символов (, max = 12), сообщении при не совпадении
     private String name;
     private String surName;
     private int salary;
