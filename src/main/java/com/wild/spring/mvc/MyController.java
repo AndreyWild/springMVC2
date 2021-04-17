@@ -48,11 +48,17 @@ public class MyController {
 //        int salary = emp.getSalary();
 //        emp.setSalary(salary * 2);
 
+
+//        System.out.println("surname length = " + emp.getSurName().length());
+
         /* Работа с валидаторами */
         if (bindingResult.hasErrors()) {
             return "ask-emp-details-view";
-        } else
+        } else {
             return "show-emp-details-view";
+        }
+
+
     }
 
 
